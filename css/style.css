@@ -1,6 +1,13 @@
-body{
-    margin: 0 auto; 
+body {
+  margin: 0 auto;
 }
-.topnav{
-    background-color: #e6e3e3;
+.site-center {
+  width: 1180px;
+}
+.topnav {
+  background-color: #e6e3e3;
+  font-family: 'Noto Sans', sans-serif;
+  color: #9f9f9f;
+  font-size: 10px;
+
 }
