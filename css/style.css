@@ -5,22 +5,24 @@ body {
   margin: 0% auto;
 }
 hr {
-  border-bottom: 1px;
-  border-color: #9f9f9f;
-  margin: 0 auto;
+  display: block;
+  border: 0;
+  border-top: 1px solid #ccc;
 }
 .top-logo {
-  padding: 25px;
+  padding: 15px;
   margin: 0% auto;
+}
+#top-right-logo {
+  margin-right: 20px; /* Horizontal Space */
 }
 .top-right-logo {
   float: right;
-  padding: 18px;
-  margin: 0 auto;
+  padding: 30px;
 }
 
 .top-info {
-  padding: 25px;
+  padding: 1px;
 }
 .vertical-menu {
   width: 274px;
@@ -29,11 +31,10 @@ hr {
 .vertical-menu a {
   color: black;
   display: flex;
-  padding: 7px;
+  padding: 15px;
   text-decoration: none;
   text-align: left;
-  align-items:flex-start;
- 
+  align-items: flex-start;
 }
 
 .vertical-menu a:hover {
@@ -46,7 +47,9 @@ hr {
   color: #9f9f9f;
   font-size: 13px;
 }
-
+#main-menu {
+  font-size: 13px;
+}
 .topnav a {
   float: left;
   display: block;
@@ -59,12 +62,13 @@ hr {
 
 .topnav .search-container {
   float: right;
+  display: inline;
 }
 
 .topnav input[type="text"] {
   padding: 6px;
   margin-top: 8px;
-  font-size: 11px;
+  font-size: 15px;
   border: none;
 }
 
@@ -109,12 +113,32 @@ hr {
 .main-menu {
   border-style: ridge;
 }
+@font-face {
+  font-family: "My Custom Font";
+  src: url(../fonts/UTM\ AvoBold_Italic.ttf) format("truetype");
+}
+h3 {
+  font-family: "My Custom Font4", Verdana, Tahoma;
+  font-size: 18px;
+}
+@font-face {
+  font-family: "My Custom Font";
+  src: url(../fonts/UTM\ Avo.ttf) format("truetype");
+}
+ul.customfont {
+  font-family: "My Custom Font", Verdana, Tahoma;
+}
+@font-face {
+  font-family: "My Custom Font2";
+  src: url(../fonts/NotoSans-Light.ttf) format("truetype");
+}
+.topnav h1 p header .column {
+  font-family: "My Custom Font2", Verdana, Tahoma;
+}
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   overflow: hidden;
-  font-family: "UTM Avo";
 }
 
 li {
@@ -123,7 +147,7 @@ li {
 
 li a {
   display: block;
-  color: lightskyblue;
+  color: #1196d5;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -145,10 +169,8 @@ li a:hover {
 .column {
   float: left;
   width: 47%;
-  font-family: "Noto Sans", serif;
   padding: 10px;
   font-size: 15px;
- 
 }
 .side-bar {
   float: right;
@@ -160,18 +182,22 @@ li a:hover {
 }
 .description {
   color: #9f9f9f;
-  
   border: none;
   padding: 3px;
   font-size: 14px;
-  font-family: "Noto Sans";
 }
-.clearfix::after{
+@font-face {
+  font-family: "My Custom Font3";
+  src: url(../fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+.description {
+  font-family: "My Custom Font3", sans-serif, Tahoma;
+}
+.clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
-header{
+header {
   padding: 5px;
 }
-
