@@ -4,14 +4,19 @@
 body {
   margin: 0% auto;
 }
+hr {
+  border-bottom: 1px;
+  border-color: #9f9f9f;
+  margin: 0 auto;
+}
 .top-logo {
   padding: 25px;
   margin: 0% auto;
 }
-top-right-logo {
+.top-right-logo {
   float: right;
-  padding: 28px;
-  margin: 10px;
+  padding: 18px;
+  margin: 0 auto;
 }
 
 .top-info {
@@ -22,11 +27,13 @@ top-right-logo {
 }
 
 .vertical-menu a {
-  
   color: black;
-  display: block;
-  padding: 12px;
+  display: flex;
+  padding: 7px;
   text-decoration: none;
+  text-align: left;
+  align-items:flex-start;
+ 
 }
 
 .vertical-menu a:hover {
@@ -49,7 +56,6 @@ top-right-logo {
   text-decoration: none;
   font-size: 11px;
 }
-
 
 .topnav .search-container {
   float: right;
@@ -103,15 +109,12 @@ top-right-logo {
 .main-menu {
   border-style: ridge;
 }
-.top-right-logo {
-  float: right;
-  padding: 10px;
-}
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  font-family: "UTM Avo";
 }
 
 li {
@@ -141,8 +144,11 @@ li a:hover {
 
 .column {
   float: left;
-  width: 33.5%;
+  width: 47%;
+  font-family: "Noto Sans", serif;
   padding: 10px;
+  font-size: 15px;
+ 
 }
 .side-bar {
   float: right;
@@ -152,3 +158,20 @@ li a:hover {
   display: table;
   clear: both;
 }
+.description {
+  color: #9f9f9f;
+  
+  border: none;
+  padding: 3px;
+  font-size: 14px;
+  font-family: "Noto Sans";
+}
+.clearfix::after{
+  content: "";
+  clear: both;
+  display: table;
+}
+header{
+  padding: 5px;
+}
+
